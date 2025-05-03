@@ -1,0 +1,51 @@
+This is a min-grading python program  which was designed as part of my "30-Day Python Challenge." 
+
+Functionalities of Functions:
+1. show_intro():
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. get_grade(mark):
+   - This function takes a mark parameter as an input and returns a grade based upon marks they got using comparison and logical operators:
+     - A+ for who scores between 91 and 100, as well works for decimal points also.
+     - A for who scores between 81 and 90, as well works for decimal points also.
+     - B for who scores between 71 and 80, as well works for decimal points also.
+     - C for who scores between 61 and 70, as well works for decimal points also.
+     - D for who scores between 51 and 60, as well works for decimal points also.
+     - F for who scores between 0 and 50, as well works for decimal points also.
+
+3. validate_score(val):
+   - This function checks weather the given value is in between range or not, Returns true if it's vaid else false.
+
+Main Logic:
+- main():
+  - It starts by calling show_intro() to display the introduction message.
+  - The program then prompts the user to input a student score. It attempts to convert the input to a float to handle decimal scores. 
+    If the conversion fails (i.e., if the input is not a numeric value), it prints an error message and exits.
+  - It validates the score by using validate_score(). If the score is not b/w 0-100, it displays a warning message and exits.
+  - Then it initializes a score which have original  with the validated score and bonus which is declared as 0.
+  - If the score is below 50, it adds +5 marks as a bonus to encourage them as updating the score and bonus.
+  - Then it calculates the final grade using get_grade() based on the adjusted score.
+  - It checks if the final grade is "F" based upon  the grade, it sets the feedback.
+  - Finally, it displays the score, with any bonuses with feedback.
+
+starting Point
+- The script checks if it is being run as the main module using if __name__ == "__main__":. If so, it calls the main()
+  function to execute the program.
+
+Key Concepts:
+- Operators: This script uses various operators including comparison >=, <=, <, logical and, assignment =, 
+  and string comparison == (may be is can also used).
+- Exception Handling: It uses a try-except block to handle invalid inputs gracefully.
+- Functions: The script is organized into functions for modularity and readability.
+- Control Structures: It uses conditional statements if, elif, else to control program flow based on user input and internal logic.
+
+What I've learnt:
+- Operators which are used to perform an operation between any two operands and returns it as a single value.
+   Arithmetic operators
+   Logical operators
+   Assignment operators
+   Comparison operators
+   Logical operators
+- Exception Handling which is used to handle exceptions(run-time errors) using Try...except...else...Finally blocks.
+- Functions which are used to make a set of block which performs some set of instructions and can be reusable.
+- Control structures are used to take control over the values and to make decisions based on conditions.
